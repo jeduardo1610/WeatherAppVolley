@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.m14x.weatherappvolley.MainActivity"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter a City"
+                android:id="@+id/cityTextView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cityName"
+                android:layout_below="@+id/cityTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What&apos;s the weather?"
+                android:id="@+id/weatherButton"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/cityName"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weatherInformation"
+                android:layout_below="@+id/weatherButton"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
